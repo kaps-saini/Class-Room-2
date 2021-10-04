@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "507190821423",
+    "project_id": "class-room-8a2ff",
+    "storage_bucket": "class-room-8a2ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507190821423:android:2662e009b01d74c3c77cda",
+        "android_client_info": {
+          "package_name": "com.kapil.android.youlearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507190821423-6hu7vnhhb9jatkl2p1epleutraehhbvs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kapil.android.youlearn",
+            "certificate_hash": "11da6891f175febc3eb5d536ab38217017dd4b09"
+          }
+        },
+        {
+          "client_id": "507190821423-4p9a52tepgvlturnfksqluene16jc77l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZQjWwSdzZXUNoQ8sc4_SUFG6-voO5JKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507190821423-4p9a52tepgvlturnfksqluene16jc77l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

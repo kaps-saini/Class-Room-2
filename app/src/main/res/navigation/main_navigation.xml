@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/youtube_videos">
+
+    <fragment
+        android:id="@+id/youtube_videos"
+        android:name="com.kapil.android.youlearn.playlist.YoutubeVideos"
+        android:label="fragment_youtube_videos"
+        tools:layout="@layout/fragment_youtube_videos" >
+        <action
+            android:id="@+id/action_youtube_videos_to_youTubePlayer"
+            app:destination="@id/youTubePlayer" />
+    </fragment>
+    <fragment
+        android:id="@+id/readingList"
+        android:name="com.kapil.android.youlearn.readinglist.ReadingList"
+        android:label="fragment_reading_list"
+        tools:layout="@layout/fragment_reading_list" >
+        <action
+            android:id="@+id/action_readingList_to_youTubePlayer"
+            app:destination="@id/youTubePlayer" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile2"
+        android:name="com.kapil.android.youlearn.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/youTubePlayer"
+        android:name="com.kapil.android.youlearn.youtubeplayer.YouTubePlayer"
+        android:label="fragment_y_t"
+        tools:layout="@layout/fragment_y_t" >
+        <action
+            android:id="@+id/action_youTubePlayer_self"
+            app:destination="@id/youTubePlayer"
+            app:popUpTo="@id/youtube_videos" />
+        <argument
+            android:name="item"
+            app:argType="com.kapil.android.youlearn.models.search.Item" />
+    </fragment>
+</navigation>
